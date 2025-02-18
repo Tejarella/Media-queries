@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        .container{
+            width:100vw;
+            min-height:100vh;
+            background-color:rgb(1, 31, 27);
+            padding:20px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background-image:url(bg.jpg);
+            background-size:cover;
+        }
+
+        .box{
+            width:330px;
+            height: 330px;
+            background-color:rgb(133, 129, 129);
+            margin:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius:7%;
+            position:relative;
+            overflow:hidden;
+            background:cover;
+            border-color: rgb(188, 188, 188);
+            box-shadow: 5px 0px 10px rgba(152, 152, 152, 0.9);
+            
+        }
+
+        .box-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 7%;
+            border: 3px solid rgb(188, 188, 188);
+            border-color: rgb(188, 188, 188);
+        }
+
+        button{
+            width: 150px;
+            padding: 10px;
+            font-size: 17px;
+            border: none;
+            border: 2px solid rgb(167, 167, 167);
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 52px;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color:transparent;
+            position: absolute;
+            bottom:10px;
+            right:25%;
+            color:white;
+            -webkit-backdrop-filter:blur(7px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 5px rgba(246, 246, 246, 0.941);
+        }
+
+        h1{
+            font-size: 23px;
+            color:aliceblue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position:absolute;
+            top:100px;
+            left:15px;
+        }
+        button:hover{
+            background-color:white;
+            color:rgb(6, 5, 5);
+        }
+        @media(max-width:1111px)
+        {
+            .container{
+                flex-direction: column;
+            }    
+        }
+
+        p{
+            font-size:15px;
+            color:aliceblue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position:absolute;
+            top:150px;
+            left:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="1.png" class="box-img">
+            <h1>SNAKE PLANT</h1>
+            <button class="button">Shop Now</button>
+            <p>Low-Maintenance & <br> Air-Purifying!</p>
+
+        </div>
+        <div class="box">
+            <img src="2.png" class="box-img">
+            <h1>MONSTERA</h1>
+            <P>Bold, Air-Purifying <br> Foliage for Any <br> Space!</P>
+            <button class="button">Shop Now</button>
+        </div>
+        <div class="box">
+            <img src="3.png" class="box-img">
+            <button class="button">Shop Now</button>
+            <h1>DRAGON TREE</h1>
+            <p>Exotic Elegance <br> with Minimal Care!</p>
+
+        </div>
+    </div>
+</body>
+</html>
